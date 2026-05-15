@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>About Us - PatientDoc AI</title>
+    <!-- Tailwind CSS (via CDN for dev) -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind Config & Custom Styles -->
+    <script src="assets/js/tailwind-config.js"></script>
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+
+<!-- wp:header -->
+<header class="w-full flex flex-col z-[100] relative">
+    <!-- Top Bar -->
+    <div class="bg-white py-4 px-8 w-full border-b border-outline-variant/20 hidden lg:block relative z-[110]">
+        <div class="max-w-container-max mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
+                    <span class="material-symbols-outlined text-primary text-3xl group-hover:text-white transition-colors">health_and_safety</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-headline-md text-2xl font-black text-primary tracking-tight leading-none">PATIENTDOC</span>
+                    <span class="text-secondary text-[10px] font-bold tracking-[0.2em] uppercase mt-1">AI Staffing Agency</span>
+                </div>
+            </a>
+            
+            <!-- Right Actions -->
+            <div class="flex items-center gap-5">
+                <!-- Career Button -->
+                <a href="career-opportunities.html" class="bg-secondary text-on-secondary px-6 py-2.5 rounded-full font-bold text-sm shadow-md hover:shadow-lg hover:scale-105 transition-all">
+                    Career Opportunities
+                </a>
+                
+                <!-- Phone Number -->
+                <a href="tel:2029935084" class="flex items-center gap-3 border border-secondary/50 rounded-full px-5 py-2 hover:border-secondary hover:bg-secondary/5 transition-colors group bg-white shadow-sm">
+                    <span class="material-symbols-outlined text-primary text-[20px] group-hover:text-secondary transition-colors">call</span>
+                    <span class="font-body-md text-primary text-sm">Phone number: <span class="text-on-surface-variant font-medium group-hover:text-secondary transition-colors">202-993-5084</span></span>
+                </a>
+                
+                <!-- Social Icons -->
+                <div class="flex items-center gap-2 pl-2">
+                    <a href="#" class="w-8 h-8 rounded-full bg-[#3b5998] flex items-center justify-center text-white hover:scale-110 transition-transform shadow-sm"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-black flex items-center justify-center text-white hover:scale-110 transition-transform shadow-sm">
+                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 1200 1227" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] flex items-center justify-center text-white hover:scale-110 transition-transform shadow-sm"><i class="fa-brands fa-instagram text-sm"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-[#0077b5] flex items-center justify-center text-white hover:scale-110 transition-transform shadow-sm"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-[#ff0000] flex items-center justify-center text-white hover:scale-110 transition-transform shadow-sm"><i class="fa-brands fa-youtube text-sm"></i></a>
+                </div>
+                
+                <!-- Language Dropdown -->
+                <div class="relative group ml-2">
+                    <button class="flex items-center gap-2 border border-outline-variant/60 rounded-md px-3 py-2 hover:bg-surface-container transition-colors bg-white shadow-sm">
+                        <img src="https://flagcdn.com/w20/us.png" alt="US Flag" class="w-5 h-auto rounded-sm border border-outline-variant/30">
+                        <span class="text-sm font-bold text-primary">EN</span>
+                        <span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:rotate-180 transition-transform duration-300">expand_more</span>
+                    </button>
+                    <!-- Dropdown Content -->
+                    <div class="absolute top-full right-0 mt-2 w-36 bg-white rounded-xl shadow-xl border border-outline-variant/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right scale-95 group-hover:scale-100 overflow-hidden z-[120]">
+                        <a href="#" class="flex items-center gap-3 px-4 py-3 bg-surface-container-low hover:bg-surface-container transition-colors border-b border-outline-variant/10">
+                            <img src="https://flagcdn.com/w20/us.png" alt="US Flag" class="w-5 h-auto rounded-sm border border-outline-variant/30">
+                            <span class="text-sm font-bold text-primary">English</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-3 px-4 py-3 hover:bg-surface-container transition-colors border-b border-outline-variant/10">
+                            <img src="https://flagcdn.com/w20/es.png" alt="ES Flag" class="w-5 h-auto rounded-sm border border-outline-variant/30">
+                            <span class="text-sm font-bold text-primary">Español</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-3 px-4 py-3 hover:bg-surface-container transition-colors">
+                            <img src="https://flagcdn.com/w20/fr.png" alt="FR Flag" class="w-5 h-auto rounded-sm border border-outline-variant/30">
+                            <span class="text-sm font-bold text-primary">Français</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Nav (Sticky) -->
+    <nav class="bg-primary shadow-2xl w-full sticky top-0 z-[100]">
+        <div class="flex items-center w-full px-8 max-w-container-max mx-auto h-[60px] relative">
+            
+            <!-- Mobile Logo -->
+            <a href="index.html" class="lg:hidden flex items-center gap-2 z-10">
+                <span class="material-symbols-outlined text-secondary text-2xl">health_and_safety</span>
+                <span class="font-headline-md text-lg font-black text-white tracking-tight">PATIENTDOC</span>
+            </a>
+
+            <!-- Nav Links (Left Aligned on Desktop) -->
+            <div class="hidden lg:flex items-center gap-2 h-full">
+                <a class="flex items-center h-full pr-5 relative group" href="index.html">
+                    <span class="text-sm font-bold text-white transition-colors group-hover:text-white/80">Home</span>
+                    <div class="absolute bottom-0 left-0 w-full h-[4px] bg-white transform origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100"></div>
+                </a>
+                <a class="flex items-center h-full px-5 relative group" href="for-employers.html">
+                    <span class="text-sm font-bold text-white transition-colors group-hover:text-white/80">For Employers</span>
+                    <div class="absolute bottom-0 left-0 w-full h-[4px] bg-white transform origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100"></div>
+                </a>
+                <a class="flex items-center h-full px-5 relative group" href="services.html">
+                    <span class="text-sm font-bold text-white transition-colors group-hover:text-white/80">Healthcare Staffing</span>
+                    <div class="absolute bottom-0 left-0 w-full h-[4px] bg-white transform origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100"></div>
+                </a>
+                <a class="flex items-center h-full pl-5 relative group" href="our-story.html">
+                    <span class="text-sm font-bold text-white transition-colors group-hover:text-white/80">Our Story</span>
+                    <div class="absolute bottom-0 left-0 w-full h-[4px] bg-white transform origin-left transition-transform duration-300 scale-x-100"></div>
+                </a>
+            </div>
+            
+            <!-- Mobile Toggle & CTA -->
+            <div class="flex items-center gap-4 z-10 ml-auto">
+                <a href="request-staffing.html" class="hidden md:flex items-center gap-2 bg-white text-primary font-bold text-sm px-6 py-2 rounded-full shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-white hover:bg-transparent hover:text-white group">
+                    Request Staffing
+                </a>
+                <button id="mobile-menu-toggle" class="lg:hidden text-white focus:outline-none">
+                    <span id="mobile-menu-icon" class="material-symbols-outlined !text-[32px]">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="flex flex-col gap-6">
+            <a class="text-headline-md font-bold text-primary" href="index.html">Home</a>
+            <a class="text-headline-md font-bold text-primary" href="for-employers.html">For Employers</a>
+            <a class="text-headline-md font-bold text-primary" href="services.html">Healthcare Staffing</a>
+            <a class="text-headline-md font-bold text-primary" href="our-story.html">Our Story</a>
+            <hr class="border-outline-variant/30">
+            <a href="career-opportunities.html" class="font-bold text-secondary">Career Opportunities</a>
+            <a href="request-staffing.html" class="gradient-btn-primary text-white font-bold text-label-md px-8 py-3.5 rounded-full mt-4 text-center">
+                Request Staffing
+            </a>
+        </div>
+    </div>
+</header>
+<!-- /wp:header -->
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero-gradient text-on-primary py-24 md:py-32 px-8 overflow-hidden relative animate-on-scroll">
+        <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="z-10">
+                <span class="text-secondary-fixed font-label-md mb-6 block uppercase tracking-widest animate-pulse">Since 1998</span>
+                <h1 class="font-headline-xl text-headline-xl mb-8 leading-tight">Our Story of Clinical Excellence in Maryland</h1>
+                <p class="font-body-lg text-body-lg text-on-primary/90 max-w-xl mb-10">Rooted in the heart of Maryland, PatientDoc AI has been the bridge between world-class healthcare talent and the facilities that serve our community. We don't just fill shifts; we empower care.</p>
+                <div class="flex gap-4">
+                    <button class="btn-gradient-secondary px-8 py-4 rounded-xl font-label-md shadow-lg hover:scale-105 transition-transform">Work With Us</button>
+                    <button class="bg-white/10 backdrop-blur-sm border border-white/20 px-8 py-4 rounded-xl font-label-md hover:bg-white/20 transition-all">Our Impact</button>
+                </div>
+            </div>
+            <div class="relative group">
+                <div class="absolute -inset-4 bg-secondary-fixed/20 blur-3xl rounded-full group-hover:bg-secondary-fixed/30 transition-all duration-700"></div>
+                <img alt="Healthcare Team" class="relative rounded-2xl immersive-shadow object-cover h-[500px] w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxtzZU3jg-3FqPNjIjB7M-zrBw_fHJSoiAJIxQYtQcduCuX_Za_t3I4ehP27sDLvWKSKd3nGzPp2A5ODDtZWzSmJQ83XKP-z--2wVqU7jWSGIil27brLFfJPm1pjf6hJVrPrStYmCxfcpJCWCEDGC1zIyXtucIhOoIOPU0cvdWOp09iW8CaLZxgRUvgIX9z8ulSWAwSvbRkGNtjrsN_2JS1gO5rIMELSCS3buxkO_lYJSG7qi5SAlALVpquNksBOBpgHXEBcWJDVvI">
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section class="py-section-padding-desktop px-8 bg-surface-container-lowest animate-on-scroll">
+        <div class="max-w-container-max mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                <div class="lg:col-span-5">
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-10 relative inline-block">
+                        Who We Are
+                        <span class="absolute -bottom-2 left-0 w-24 h-1 bg-secondary-fixed rounded-full"></span>
+                    </h2>
+                    <div class="space-y-8 text-on-surface-variant font-body-lg leading-relaxed">
+                        <p>Founded by healthcare veterans who recognized the critical need for reliable staffing in Maryland's diverse medical landscape, PatientDoc AI began as a small family-oriented project. Over two decades, we have evolved into a premier staffing partner for major hospital systems and private clinics alike.</p>
+                        <p>Our journey is defined by a deep understanding of the local healthcare ecosystem, from the bustling trauma centers of Baltimore to the specialized rehabilitation facilities across the Chesapeake region.</p>
+                    </div>
+                </div>
+                <div class="lg:col-span-7">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="space-y-6">
+                            <div class="bg-surface-white p-10 rounded-2xl border border-outline-variant immersive-shadow flex flex-col justify-center items-center text-center">
+                                <span class="text-primary font-headline-xl block mb-2">25+</span>
+                                <span class="text-label-md font-label-md text-on-surface-variant uppercase tracking-widest">Years Experience</span>
+                            </div>
+                            <img alt="Experience" class="rounded-2xl object-cover h-64 w-full shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3Nb-F69RzxTumsKwyTjBVPEOv1WVH6Zbkuw07ZVo1RVFUUXsnHlqV8xl9iFDaGqbxYj-gLb4BaPHFqIA-DRyeG4X0EMbEs7ehriRlQt-eZ1L2NvjEotlxGtq1AbX20bL8hCwwnOdLfO9pyzU3zGBHnKERSFp2fE5irbjFSkrwBfJRVStzIv62lNg7GqdHXGrf93KwOh5Sct75wPvtgtp-coUjmpj4fJYdehJvJPnuvulQf55vQ1VHFR1-zhGYZO1O6stR8uzCEkFK">
+                        </div>
+                        <div class="space-y-6 pt-12">
+                            <img alt="Facility" class="rounded-2xl object-cover h-80 w-full shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIIB427pbKsvGP17M4_-f3jzfkKm3LTGxw5i_QQw4I5r9ulsu9n_YdpbvxmOyajlhAW9q7wFI2g7R3bhjOoUEgGi3TELsfTjc3e9fUoC665k7mjKCX4i6VljiVjGEx8eGjj2ZcRXXrisx8FD3yZOTqERVveAK-D9MpLN1vaPXH1lHFR7k8yNN74sJXebKPpKwrA7m4oat5Ik9lHW8n-5yoCIt4lBUNTjC0a5S-FZq_zLlBt_ITZ-T39zo-kmlIBMl9mxbb_3b4y5uU">
+                            <div class="bg-success-mint/5 p-10 rounded-2xl border border-success-mint/20 immersive-shadow flex flex-col justify-center items-center text-center">
+                                <span class="text-secondary font-headline-xl block mb-2">500+</span>
+                                <span class="text-label-md font-label-md text-on-surface-variant uppercase tracking-widest">Partner Facilities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-section-padding-desktop px-8 bg-background relative overflow-hidden animate-on-scroll">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px] -mr-48 -mt-48"></div>
+        <div class="max-w-container-max mx-auto relative z-10">
+            <div class="text-center mb-20">
+                <h2 class="font-headline-lg text-headline-lg text-primary mb-6">Our Core Values</h2>
+                <p class="text-on-surface-variant max-w-2xl mx-auto text-body-lg">The principles that guide every placement and interaction, ensuring Maryland's health stays in safe hands.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="group relative bg-surface-white p-10 rounded-3xl border border-outline-variant shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-4">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
+                    <div class="w-20 h-20 btn-gradient-primary rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-primary/20">
+                        <span class="material-symbols-outlined text-white text-4xl">verified_user</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-primary mb-6">Integrity</h3>
+                    <p class="text-on-surface-variant font-body-md leading-relaxed">We believe in transparent communication and ethical staffing. Every clinician we place undergoes rigorous vetting to ensure the highest standard of trust.</p>
+                </div>
+                <div class="group relative bg-surface-white p-10 rounded-3xl border border-outline-variant shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-4">
+                    <div class="absolute inset-0 bg-gradient-to-br from-success-mint/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
+                    <div class="w-20 h-20 btn-gradient-secondary rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-success-mint/20">
+                        <span class="material-symbols-outlined text-white text-4xl">clinical_notes</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-primary mb-6">Excellence</h3>
+                    <p class="text-on-surface-variant font-body-md leading-relaxed">From patient care to administrative support, we strive for a level of service that exceeds expectations and sets new benchmarks in the healthcare industry.</p>
+                </div>
+                <div class="group relative bg-surface-white p-10 rounded-3xl border border-outline-variant shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-4">
+                    <div class="absolute inset-0 bg-gradient-to-br from-deep-ocean/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
+                    <div class="w-20 h-20 bg-deep-ocean rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-deep-ocean/20">
+                        <span class="material-symbols-outlined text-white text-4xl">history_toggle_off</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-primary mb-6">Reliability</h3>
+                    <p class="text-on-surface-variant font-body-md leading-relaxed">Healthcare never sleeps. We provide 24/7 support to our partners, ensuring that staffing gaps never compromise the quality of patient care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="py-section-padding-desktop bg-surface-white overflow-hidden animate-on-scroll">
+        <div class="max-w-container-max mx-auto px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                <div class="max-w-2xl">
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-6">Our Leadership</h2>
+                    <p class="text-on-surface-variant text-body-lg">Guided by a team of clinical experts and operational strategists with over 60 combined years in Maryland health services.</p>
+                </div>
+            </div>
+        </div>
+        <div class="px-4 md:px-8 max-w-container-max mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-3xl immersive-shadow mb-8 aspect-[3/4]">
+                        <img alt="Sarah Mickey" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrUxwr23FGKLVe-7hk4hw3MVljXwbvni8qj7zPhtF-3QT39QHRNdIAFbUyh8gO4PqUiwiDOhvGNXRc-Z4yPpmsqu-Lu41DSaSrFwCgdFpiS1FU-LSqhBA4KI4qIG_fLFctkcsE76A-34ZNqshK_k5SaJQ40kPTxkEka_ayLXgI8AHAFemIc_iWYzu3shE53QuY4uLMtl5De0k0YvcZStNK7QuHhqWMcJapm2IkH9EflqnOMMVouFBOgC53IIT6IXzkqILZbFBeKp0s">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+                            <p class="text-white font-label-md">Sarah Mickey</p>
+                            <p class="text-secondary-fixed text-sm uppercase">CEO &amp; Founder</p>
+                        </div>
+                    </div>
+                    <div class="px-2">
+                        <h4 class="font-headline-md text-headline-md text-primary mb-1">Sarah Mickey</h4>
+                        <p class="text-label-md font-label-md text-success-mint uppercase tracking-wider">CEO &amp; Founder</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-3xl immersive-shadow mb-8 aspect-[3/4]">
+                        <img alt="Dr. David Chen" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-5R0uVicLUtDBPUNuBFUadHlEOI-k_sOgxv5QaPLWmfG1nczGdIDmJM50jfuOS84ozG3vTK7reLm1xlLq13VLMDI2OiVpaAVMFxJyr2NV5lyDa89Le9riWFH_UQaC4W_ttJyiNyvkGaYcxxN7LpA9Pq-T0ZbwZ6UGGvWSgMulvjyEo5HpDK2S5tsTgh8SCSXlnnW-qjec5PWf-5CHiM2NCBi845Zlq8lt4nShC_gMu4UEnlVann7QZClNJ3FMkuGEN0U0-LRbgy7j">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+                            <p class="text-white font-label-md">Dr. David Chen</p>
+                            <p class="text-secondary-fixed text-sm uppercase">Chief Medical Officer</p>
+                        </div>
+                    </div>
+                    <div class="px-2">
+                        <h4 class="font-headline-md text-headline-md text-primary mb-1">Dr. David Chen</h4>
+                        <p class="text-label-md font-label-md text-success-mint uppercase tracking-wider">Chief Medical Officer</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-3xl immersive-shadow mb-8 aspect-[3/4]">
+                        <img alt="Elena Rodriguez" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXtQDJnH2zBFwDh4vSRRrL8PegZ-ahA7jeJ4igSJgiYCSiyAFVSI1dGOc5KDu4QdJQkkFUftUFeALGdcpPBJyJmGLbtGQ-bICtKWmU9hkolMTnT8rL1f-zj1uQ90WO1yjmy_bbO_1cObCfJ45tBy0rcUqWlYjAc_b9PPD3O6W_-XG1QSmGSCKcqWb9UBEsetrWNdCIDpLzyRpxhHdHJbGLhmOp2j2Ma7123VG5HihPwJk-kMZuBvfN20apZptOCNC9RelGBSY2iV5g">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+                            <p class="text-white font-label-md">Elena Rodriguez</p>
+                            <p class="text-secondary-fixed text-sm uppercase">Head of Operations</p>
+                        </div>
+                    </div>
+                    <div class="px-2">
+                        <h4 class="font-headline-md text-headline-md text-primary mb-1">Elena Rodriguez</h4>
+                        <p class="text-label-md font-label-md text-success-mint uppercase tracking-wider">Head of Operations</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-3xl immersive-shadow mb-8 aspect-[3/4]">
+                        <img alt="Marcus Thompson" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGYv4Rfi_V3WfT32-3nO4H-HJ3Jy7KzGKsE2xtNnkyNf6ocI4XCgsdELHizplYAjEFyeBvZVTZXyaGNgOBteNSFIH-R8Fhz6zYAhbkA6Oofk3UnuAGSOSa3jyoekqJXGaICvHNW7XW8jHXwNtVWhDRbdohAZJFzs1k-SW79S1bnfuXwIlyYAIhewDUiyoPPmlSfCYPXHx43kHxYXpVCQS-3JRiPwaekp2PJy08INtKoC6wWrLBKBJ2-zZNwY6I3KwwFixW8o98ppSw">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+                            <p class="text-white font-label-md">Marcus Thompson</p>
+                            <p class="text-secondary-fixed text-sm uppercase">Director of Talent</p>
+                        </div>
+                    </div>
+                    <div class="px-2">
+                        <h4 class="font-headline-md text-headline-md text-primary mb-1">Marcus Thompson</h4>
+                        <p class="text-label-md font-label-md text-success-mint uppercase tracking-wider">Director of Talent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Impact -->
+    <section class="py-section-padding-desktop bg-deep-ocean text-on-primary relative animate-on-scroll">
+        <div class="max-w-container-max mx-auto px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                <div>
+                    <h2 class="font-headline-lg text-headline-lg mb-12 border-l-4 border-secondary-fixed pl-8">Community Impact</h2>
+                    <div class="space-y-12">
+                        <div class="group flex gap-8">
+                            <div class="shrink-0 w-16 h-16 rounded-2xl bg-secondary-fixed/20 flex items-center justify-center group-hover:bg-secondary-fixed/40 transition-colors">
+                                <span class="material-symbols-outlined text-secondary-fixed text-3xl">volunteer_activism</span>
+                            </div>
+                            <div>
+                                <h4 class="font-headline-md text-headline-md mb-4 group-hover:text-secondary-fixed transition-colors">Local Provider Support</h4>
+                                <p class="text-on-primary/80 font-body-md leading-relaxed">We provide specialized staffing for non-profit clinics and community health centers, ensuring underserved populations receive top-tier care.</p>
+                            </div>
+                        </div>
+                        <div class="group flex gap-8">
+                            <div class="shrink-0 w-16 h-16 rounded-2xl bg-secondary-fixed/20 flex items-center justify-center group-hover:bg-secondary-fixed/40 transition-colors">
+                                <span class="material-symbols-outlined text-secondary-fixed text-3xl">school</span>
+                            </div>
+                            <div>
+                                <h4 class="font-headline-md text-headline-md mb-4 group-hover:text-secondary-fixed transition-colors">Nursing Scholarship Fund</h4>
+                                <p class="text-on-primary/80 font-body-md leading-relaxed">Each year, we award five scholarships to residents pursuing nursing degrees, reinvesting in the future of our healthcare workforce.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-10 bg-secondary-fixed/10 blur-[120px] rounded-full"></div>
+                    <div class="bg-surface-white/5 p-6 rounded-[40px] backdrop-blur-xl border border-white/10 immersive-shadow relative z-10">
+                        <img alt="Community Support" class="rounded-[32px] object-cover w-full h-[600px] shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGAJU8iWFnt9ebDD8aLnzrcUHuAG-oHuCG7dprFbAtu9n-jvr589m75VyF8C3Lw7VuG-dg3UJMpjlKD1VEKdkzVOZL8162S1UFSsMtkV0x7tM4VOMnYsSRE8IYKF9Qq6jshLPhbin2UY_nK3lllOots26Cz1Wc1cy8srIsvcpw3h6P0PTaD0Wytkc79pPGaFX50ZLx5DOjwQeJwE8hmkH3uSmIAIztSf3tbZQlelupMnaizIKxVEM87sP3-mU6k8Sgkuzo9WdcDRAh">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-section-padding-desktop px-8 bg-surface-white relative overflow-hidden animate-on-scroll">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="font-headline-xl text-headline-xl text-primary mb-8">Be Part of Our Next Chapter</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">Whether you are a healthcare professional looking for your next challenge or a facility in need of world-class staff, we are here to help you grow.</p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="for-employers.html" class="btn-gradient-primary text-on-primary font-label-md py-5 px-12 rounded-2xl hover:scale-105 transition-all shadow-xl shadow-primary/20 text-center">Hire Through Us</a>
+                <a href="#" class="btn-gradient-secondary text-on-primary font-label-md py-5 px-12 rounded-2xl hover:scale-105 transition-all shadow-xl shadow-success-mint/20 text-center">Apply for Jobs</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- wp:footer -->
+<footer class="immersive-section bg-deep-ocean border-t border-white/10 pt-section-padding-desktop">
+    <div class="max-w-[1600px] mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+        <div class="col-span-1">
+            <div class="font-headline-md text-headline-md font-black text-white mb-8">PatientDoc AI</div>
+            <p class="font-body-md text-body-md text-white/70 mb-10 leading-relaxed">Setting the standard in healthcare staffing through innovation, reliability, and human-centric care.</p>
+            <div class="flex gap-6">
+                <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-primary transition-colors" href="#"><i class="fa-brands fa-linkedin-in text-[20px]"></i></a>
+                <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-primary transition-colors" href="#"><i class="fa-brands fa-facebook-f text-[20px]"></i></a>
+                <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-primary transition-colors" href="#"><i class="fa-brands fa-instagram text-[20px]"></i></a>
+            </div>
+        </div>
+        <div>
+            <h4 class="font-bold text-white text-lg mb-8 uppercase tracking-widest">Quick Links</h4>
+            <ul class="space-y-6">
+                <li><a class="text-white/70 hover:text-primary-fixed transition-colors font-medium" href="index.html">Home</a></li>
+                <li><a class="text-white/70 hover:text-primary-fixed transition-colors font-medium" href="for-employers.html">Hire Staff</a></li>
+                <li><a class="text-white/70 hover:text-primary-fixed transition-colors font-medium" href="services.html">Services</a></li>
+                <li><a class="text-white/70 hover:text-primary-fixed transition-colors font-medium" href="our-story.html">About Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold text-white text-lg mb-8 uppercase tracking-widest">Legal</h4>
+            <ul class="space-y-6">
+                <li><a class="text-white/70 hover:text-primary-fixed transition-colors font-medium" href="#">Privacy Policy</a></li>
+                <li><a class="text-white/70 hover:text-primary-fixed transition-colors font-medium" href="#">Terms of Service</a></li>
+                <li><a class="text-white/70 hover:text-primary-fixed transition-colors font-medium" href="#">Staff Compliance</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold text-white text-lg mb-8 uppercase tracking-widest">Contact</h4>
+            <p class="font-body-md text-white/70 mb-6 leading-relaxed">Setting the standard in healthcare staffing through innovation.</p>
+            <p class="font-body-md text-white/70 mb-2 font-bold underline">support@patientdoc.com</p>
+            <p class="font-body-md text-white/70 font-bold">(555) 123-4567</p>
+        </div>
+    </div>
+    <div class="border-t border-white/5 py-10">
+        <div class="max-w-[1600px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-white/50 text-sm">© 2026 PatientDoc AI. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<!-- /wp:footer -->
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
