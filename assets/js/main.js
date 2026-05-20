@@ -1,4 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Hero Slider Logic
+    const slides = document.querySelectorAll('.hero-slide');
+    if (slides.length > 0) {
+        let currentSlide = 0;
+        
+        // Initialize the first slide
+        slides[currentSlide].classList.remove('opacity-0', 'scale-105', 'z-0');
+        slides[currentSlide].classList.add('opacity-100', 'scale-100', 'z-10');
+
+        setInterval(() => {
+            // Fade out current slide
+            slides[currentSlide].classList.remove('opacity-100', 'scale-100', 'z-10');
+            slides[currentSlide].classList.add('opacity-0', 'scale-105', 'z-0');
+            
+            // Move to next slide
+            currentSlide = (currentSlide + 1) % slides.length;
+            
+            // Fade in next slide
+            slides[currentSlide].classList.remove('opacity-0', 'scale-105', 'z-0');
+            slides[currentSlide].classList.add('opacity-100', 'scale-100', 'z-10');
+        }, 5000); // Change slide every 5 seconds
+    }
+
     // Simple parallax effect for hero (from homepage)
     window.addEventListener('mousemove', (e) => {
         const hero = document.querySelector('.hero-parallax img');

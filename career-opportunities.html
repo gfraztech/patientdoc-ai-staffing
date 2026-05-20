@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Career Opportunities - PatientDoc AI</title>
+    <title>Career Opportunities - PatientsDoc AI</title>
     <!-- Tailwind CSS (via CDN for dev) -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <!-- Google Fonts & FontAwesome -->
@@ -27,7 +27,7 @@
                     <span class="material-symbols-outlined text-primary text-3xl group-hover:text-white transition-colors">health_and_safety</span>
                 </div>
                 <div class="flex flex-col">
-                    <span class="font-headline-md text-2xl font-black text-primary tracking-tight leading-none">PATIENTDOC</span>
+                    <span class="font-headline-md text-2xl font-black text-primary tracking-tight leading-none">PATIENTSDOC</span>
                     <span class="text-secondary text-[10px] font-bold tracking-[0.2em] uppercase mt-1">AI Staffing Agency</span>
                 </div>
             </a>
@@ -40,9 +40,9 @@
                 </a>
                 
                 <!-- Phone Number -->
-                <a href="tel:2029935084" class="flex items-center gap-3 border border-secondary/50 rounded-full px-5 py-2 hover:border-secondary hover:bg-secondary/5 transition-colors group bg-white shadow-sm">
+                <a href="tel:3017600335" class="flex items-center gap-3 border border-secondary/50 rounded-full px-5 py-2 hover:border-secondary hover:bg-secondary/5 transition-colors group bg-white shadow-sm">
                     <span class="material-symbols-outlined text-primary text-[20px] group-hover:text-secondary transition-colors">call</span>
-                    <span class="font-body-md text-primary text-sm">Phone number: <span class="text-on-surface-variant font-medium group-hover:text-secondary transition-colors">202-993-5084</span></span>
+                    <span class="font-body-md text-primary text-sm">Phone number: <span class="text-on-surface-variant font-medium group-hover:text-secondary transition-colors">301-760-0335</span></span>
                 </a>
                 
                 <!-- Social Icons -->
@@ -92,7 +92,7 @@
             <!-- Mobile Logo -->
             <a href="index.html" class="lg:hidden flex items-center gap-2 z-10">
                 <span class="material-symbols-outlined text-secondary text-2xl">health_and_safety</span>
-                <span class="font-headline-md text-lg font-black text-white tracking-tight">PATIENTDOC</span>
+                <span class="font-headline-md text-lg font-black text-white tracking-tight">PATIENTSDOC</span>
             </a>
 
             <!-- Nav Links (Left Aligned on Desktop) -->
@@ -146,7 +146,7 @@
 
 <main>
     <!-- Hero Section -->
-    <section class="hero-gradient relative overflow-hidden py-24 md:py-32 animate-on-scroll">
+    <section class="hero-gradient relative overflow-hidden min-h-[700px] flex items-center animate-on-scroll">
         <div class="max-w-container-max mx-auto px-8 relative z-10 text-center">
             <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-white text-label-md font-bold mb-6 border border-white/20">
                 <span class="w-2 h-2 rounded-full bg-success-mint animate-pulse"></span> Join Our Team
@@ -242,7 +242,7 @@
                     <p class="text-on-surface-variant text-body-md">Don't see the right role? Submit your details to join our talent network, and our recruiters will reach out.</p>
                 </div>
 
-                <form class="space-y-6">
+                <form class="space-y-6" action="#" method="POST" enctype="multipart/form-data">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="space-y-2">
                             <label class="font-label-md text-label-md text-primary font-bold">First Name</label>
@@ -277,12 +277,30 @@
                         </select>
                     </div>
 
-                    <div class="space-y-2">
-                        <label class="font-label-md text-label-md text-primary font-bold">Resume Link (LinkedIn or Drive)</label>
-                        <input type="url" class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none" placeholder="https://linkedin.com/in/yourprofile">
+                    <div class="space-y-4">
+                        <label class="font-label-md text-label-md text-primary font-bold block border-b border-outline-variant/30 pb-2">Required Documents</label>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="font-label-md text-sm text-on-surface-variant font-bold">Resume <span class="text-error">*</span></label>
+                                <input type="file" name="resume" accept=".pdf,.doc,.docx" required class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl px-4 py-2 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 text-sm text-on-surface-variant">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="font-label-md text-sm text-on-surface-variant font-bold">Cover Letter</label>
+                                <input type="file" name="cover_letter" accept=".pdf,.doc,.docx" class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl px-4 py-2 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 text-sm text-on-surface-variant">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="font-label-md text-sm text-on-surface-variant font-bold">Driver's License <span class="text-error">*</span></label>
+                                <input type="file" name="drivers_license" accept="image/*,.pdf" required class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl px-4 py-2 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 text-sm text-on-surface-variant">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="font-label-md text-sm text-on-surface-variant font-bold">Photo ID <span class="text-error">*</span></label>
+                                <input type="file" name="photo_id" accept="image/*,.pdf" required class="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl px-4 py-2 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 text-sm text-on-surface-variant">
+                            </div>
+                        </div>
                     </div>
 
-                    <button type="button" class="w-full gradient-btn-primary text-white font-headline-md text-lg py-4 rounded-xl shadow-lg hover:shadow-2xl hover:scale-[1.01] transition-all mt-8">
+                    <button type="submit" class="w-full gradient-btn-primary text-white font-headline-md text-lg py-4 rounded-xl shadow-lg hover:shadow-2xl hover:scale-[1.01] transition-all mt-8">
                         Submit Application
                     </button>
                     <p class="text-xs text-center text-on-surface-variant mt-4">By submitting this form, you agree to our privacy policy and consent to receive communications regarding your application.</p>
@@ -296,7 +314,7 @@
 <footer class="immersive-section bg-deep-ocean border-t border-white/10 pt-section-padding-desktop">
     <div class="max-w-[1600px] mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
         <div class="col-span-1">
-            <div class="font-headline-md text-headline-md font-black text-white mb-8">PatientDoc AI</div>
+            <div class="font-headline-md text-headline-md font-black text-white mb-8">PatientsDoc AI</div>
             <p class="font-body-md text-body-md text-white/70 mb-10 leading-relaxed">Setting the standard in healthcare staffing through innovation, reliability, and human-centric care.</p>
             <div class="flex gap-6">
                 <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-primary-fixed hover:text-primary transition-colors" href="#"><i class="fa-brands fa-linkedin-in text-[20px]"></i></a>
@@ -323,14 +341,15 @@
         </div>
         <div>
             <h4 class="font-bold text-white text-lg mb-8 uppercase tracking-widest">Contact</h4>
-            <p class="font-body-md text-white/70 mb-6 leading-relaxed">Setting the standard in healthcare staffing through innovation.</p>
-            <p class="font-body-md text-white/70 mb-2 font-bold underline">support@patientdoc.com</p>
-            <p class="font-body-md text-white/70 font-bold">(555) 123-4567</p>
+            <p class="font-body-md text-white/70 mb-4 leading-relaxed">903-1/2 York Road<br>Towson, MD 21204</p>
+            <p class="font-body-md text-white/70 mb-2 font-bold underline">support@patientsdoc.com</p>
+            <p class="font-body-md text-white/70 mb-2 font-bold">Phone: 301-760-0335</p>
+            <p class="font-body-md text-white/70 font-bold">Fax: 240-556-0535</p>
         </div>
     </div>
     <div class="border-t border-white/5 py-10">
         <div class="max-w-[1600px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-            <p class="text-white/50 text-sm">© 2026 PatientDoc AI. All rights reserved.</p>
+            <p class="text-white/50 text-sm">© 2026 PatientsDoc AI. All rights reserved.</p>
         </div>
     </div>
 </footer>
