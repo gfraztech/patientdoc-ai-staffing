@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Services - PatientsDoc AI</title>
+    <title>Staff Compliance - PatientsDoc AI</title>
     <!-- Tailwind CSS (via CDN for dev) -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <!-- Google Fonts -->
@@ -107,11 +107,11 @@
                 </a>
                 <a class="flex items-center h-full px-5 relative group" href="/services">
                     <span class="text-sm font-bold text-white transition-colors group-hover:text-white/80">Healthcare Staffing</span>
-                    <div class="absolute bottom-0 left-0 w-full h-[4px] bg-white transform origin-left transition-transform duration-300 scale-x-100"></div>
+                    <div class="absolute bottom-0 left-0 w-full h-[4px] bg-white transform origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100"></div>
                 </a>
                 <a class="flex items-center h-full pl-5 relative group" href="/our-story">
                     <span class="text-sm font-bold text-white transition-colors group-hover:text-white/80">Our Story</span>
-                    <div class="absolute bottom-0 left-0 w-full h-[4px] bg-white transform origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100"></div>
+                    <div class="absolute bottom-0 left-0 w-full h-[4px] bg-white transform origin-left transition-transform duration-300 scale-x-100"></div>
                 </a>
             </div>
             
@@ -145,158 +145,7 @@
 <!-- /wp:header -->
 
 <main>
-    <!-- Hero Section -->
-    <section class="relative min-h-[700px] flex items-center overflow-hidden animate-on-scroll">
-        <div class="absolute inset-0 z-0">
-            <img class="w-full h-full object-cover object-[center_30%] grayscale-[10%] brightness-75" alt="Professional medical team" src="assets/img/hero_slide_1.png">
-            <div class="absolute inset-0 bg-gradient-to-r from-deep-ocean/95 via-deep-ocean/70 to-transparent"></div>
-        </div>
-        <div class="relative z-10 max-w-container-max mx-auto px-8 w-full">
-            <div class="max-w-3xl">
-                <h1 class="font-headline-xl text-headline-xl text-white mb-8 leading-[1.1]">Precision Staffing for the Future of Care</h1>
-                <p class="font-body-lg text-body-lg text-white/90 mb-12 max-w-xl leading-relaxed">Bridging the gap between elite healthcare talent and world-class facilities through a clinical approach to recruitment and vetting.</p>
-                <div class="flex flex-wrap gap-5">
-                    <a href="/for-employers" class="bg-gradient-secondary text-white px-10 py-5 rounded-2xl font-bold text-body-md hover:shadow-2xl hover:shadow-success-mint/30 transition-all transform hover:-translate-y-1 inline-block">Request Staffing</a>
-                    <button class="bg-white/10 backdrop-blur-xl border border-white/30 text-white px-10 py-5 rounded-2xl font-bold text-body-md hover:bg-white/20 transition-all">Explore Our Process</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Staffing Capabilities: Bento Grid -->
-    <section class="py-section-padding-desktop px-8 max-w-container-max mx-auto animate-on-scroll">
-        <div class="text-center mb-20">
-            <span class="text-success-mint font-bold text-label-md uppercase tracking-[0.2em]">Our Capabilities</span>
-            <h2 class="font-headline-lg text-headline-lg text-primary mt-4 max-w-3xl mx-auto">The PatientsDoc AI Quality Protocol</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
-            <!-- Nursing -->
-            <div class="md:col-span-8 group relative overflow-hidden rounded-3xl bg-surface-white border border-outline-variant/50 shadow-sm hover:shadow-2xl transition-all h-[500px]">
-                <div class="absolute inset-0">
-                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Healthcare professional" src="assets/img/diverse_nurses_station.png">
-                    <div class="absolute inset-0 bg-gradient-to-t from-deep-ocean/90 via-deep-ocean/30 to-transparent"></div>
-                </div>
-                <div class="absolute bottom-0 p-10">
-                    <h3 class="font-headline-md text-headline-md text-white mb-4">Nursing Excellence</h3>
-                    <p class="text-white/80 max-w-lg mb-8 leading-relaxed">Registered Nurses, LPNs, and specialized practitioners for acute, critical, and long-term care environments.</p>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="bg-white/10 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-label-sm font-semibold border border-white/20">ER / ICU Specialized</span>
-                        <span class="bg-white/10 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-label-sm font-semibold border border-white/20">Labor &amp; Delivery</span>
-                        <span class="bg-white/10 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-label-sm font-semibold border border-white/20">Pediatrics</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Allied Health & Admin Column -->
-            <div class="md:col-span-4 flex flex-col gap-8">
-                <div class="gradient-btn-primary text-white p-10 rounded-3xl flex-1 relative overflow-hidden group hover:shadow-xl transition-shadow">
-                    <div class="relative z-10 h-full flex flex-col justify-between">
-                        <div>
-                            <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mb-6">
-                                <span class="material-symbols-outlined text-4xl">clinical_notes</span>
-                            </div>
-                            <h3 class="font-headline-md text-headline-md mb-3">Allied Health</h3>
-                            <p class="text-white/80 leading-relaxed">Radiologists, physical therapists, and laboratory technicians vetted for technical precision.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-surface-container p-10 rounded-3xl flex-1 border border-outline-variant/30 hover:border-primary/30 transition-all">
-                    <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-4xl text-primary">groups</span>
-                    </div>
-                    <h3 class="font-headline-md text-headline-md text-primary mb-3">Administrative</h3>
-                    <p class="text-on-surface-variant leading-relaxed">Critical support roles from medical billing to healthcare facility management and operations.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Specializations -->
-    <section class="bg-surface-container-low py-section-padding-desktop animate-on-scroll">
-        <div class="px-8 max-w-container-max mx-auto">
-            <div class="text-center mb-20">
-                <h2 class="font-headline-lg text-headline-lg text-primary">Specialized Facility Support</h2>
-                <p class="text-on-surface-variant max-w-2xl mx-auto mt-6 text-body-lg">Tailored staffing strategies designed to meet the unique operational challenges of diverse clinical environments.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="bg-surface-white p-12 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-outline-variant/50 group text-center">
-                    <div class="w-20 h-20 bg-primary-fixed/50 flex items-center justify-center rounded-2xl mb-8 mx-auto group-hover:bg-primary transition-colors">
-                        <span class="material-symbols-outlined text-primary text-4xl group-hover:text-white">apartment</span>
-                    </div>
-                    <h4 class="font-headline-md text-headline-md text-primary mb-4">Hospitals</h4>
-                    <p class="text-on-surface-variant leading-relaxed">Scaling workforce solutions for major medical centers and community hospitals with high-volume, critical needs.</p>
-                </div>
-                <div class="bg-surface-white p-12 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-outline-variant/50 group text-center">
-                    <div class="w-20 h-20 bg-secondary-fixed/50 flex items-center justify-center rounded-2xl mb-8 mx-auto group-hover:bg-secondary transition-colors">
-                        <span class="material-symbols-outlined text-secondary text-4xl group-hover:text-white">home_health</span>
-                    </div>
-                    <h4 class="font-headline-md text-headline-md text-primary mb-4">Long-term Care</h4>
-                    <p class="text-on-surface-variant leading-relaxed">Empathetic and highly skilled professionals dedicated to skilled nursing and assisted living environments.</p>
-                </div>
-                <div class="bg-surface-white p-12 rounded-3xl shadow-sm hover:shadow-xl transition-all border border-outline-variant/50 group text-center">
-                    <div class="w-20 h-20 bg-tertiary-fixed/50 flex items-center justify-center rounded-2xl mb-8 mx-auto group-hover:bg-tertiary transition-colors">
-                        <span class="material-symbols-outlined text-tertiary text-4xl group-hover:text-white">stethoscope</span>
-                    </div>
-                    <h4 class="font-headline-md text-headline-md text-primary mb-4">Clinics &amp; Specialty</h4>
-                    <p class="text-on-surface-variant leading-relaxed">Specialized staffing for private practices, urgent care centers, and high-precision outpatient clinics.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quality Assurance Process -->
-    <section class="py-section-padding-desktop px-8 max-w-container-max mx-auto overflow-hidden animate-on-scroll">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-            <div class="relative">
-                <span class="text-primary font-bold text-label-md uppercase tracking-[0.2em]">Our Gold Standard</span>
-                <h2 class="font-headline-lg text-headline-lg text-primary mt-4 mb-8">The PatientsDoc AI Quality Protocol</h2>
-                <p class="font-body-lg text-body-lg text-on-surface-variant mb-12 leading-relaxed">We don't just fill roles; we vet for clinical excellence. Our rigorous 5-step screening protocol ensures every candidate meets the highest standards of safety, proficiency, and bedside manner.</p>
-                <div class="space-y-10">
-                    <div class="flex gap-6 group">
-                        <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-secondary text-white flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform">1</div>
-                        <div>
-                            <h5 class="font-headline-md text-headline-md text-primary mb-2 text-[20px]">License Verification</h5>
-                            <p class="text-on-surface-variant leading-relaxed">Real-time primary source verification for all credentials, certifications, and historical performance markers.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-6 group">
-                        <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-secondary text-white flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform">2</div>
-                        <div>
-                            <h5 class="font-headline-md text-headline-md text-primary mb-2 text-[20px]">Clinical Competency Testing</h5>
-                            <p class="text-on-surface-variant leading-relaxed">Advanced skills assessment tailored specifically to clinical units and current technological hospital requirements.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-6 group">
-                        <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-secondary text-white flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform">3</div>
-                        <div>
-                            <h5 class="font-headline-md text-headline-md text-primary mb-2 text-[20px]">Comprehensive Screening</h5>
-                            <p class="text-on-surface-variant leading-relaxed">Multilayered background checks, drug screening, and continuous OIG/SAM exclusion list monitoring.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="absolute -inset-10 bg-primary-fixed/20 rounded-full blur-[100px] -z-10 animate-pulse"></div>
-                <div class="relative">
-                    <img class="relative z-10 rounded-[40px] shadow-2xl w-full aspect-[4/5] object-cover" alt="Medical technology" src="assets/img/senior_female_doctor.png">
-                    <div class="absolute -bottom-10 -left-10 glass-card p-8 rounded-2xl shadow-2xl z-20 border-white/50">
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-success-mint/10 rounded-xl flex items-center justify-center">
-                                <span class="material-symbols-outlined text-success-mint text-3xl font-bold">verified</span>
-                            </div>
-                            <div>
-                                <span class="font-extrabold text-primary block text-lg">Fully Compliant</span>
-                                <span class="text-label-sm text-on-surface-variant">Joint Commission Standards</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
-<!-- wp:footer -->
-<footer class="immersive-section bg-deep-ocean border-t border-white/10 pt-section-padding-desktop">
+    <section class="py-section-padding-desktop bg-white text-deep-ocean relative"><div class="max-w-3xl mx-auto px-8 prose prose-lg"><h1 class="text-5xl font-bold mb-8">Staff Compliance</h1><p>PatientsDoc AI maintains the highest standards of compliance for all our healthcare professionals.</p><h2 class="text-2xl font-bold mt-8 mb-4">Credentialing Process</h2><p>Every professional undergoes a rigorous background check, license verification, and skills assessment.</p><h2 class="text-2xl font-bold mt-8 mb-4">Ongoing Training</h2><p>Our staff is required to complete regular training modules on HIPAA, OSHA, and clinical best practices.</p><h2 class="text-2xl font-bold mt-8 mb-4">Quality Assurance</h2><p>We perform regular audits and performance evaluations to ensure exceptional patient care and facility satisfaction.</p></div></section><footer class="immersive-section bg-deep-ocean border-t border-white/10 pt-section-padding-desktop">
     <div class="max-w-[1600px] mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
         <div class="col-span-1">
             <div class="font-headline-md text-headline-md font-black text-white mb-8">PatientsDoc AI</div>
